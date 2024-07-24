@@ -1,0 +1,90 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;  
+}
+
+body{
+    background-color: rgb(58, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    border-radius: 10px;
+    padding: 20px;
+}
+p{
+    
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.search-box
+{  
+    padding: 5px ;
+   display: flex;
+   justify-content: center;
+   
+}
+.btn
+{
+    background-color: darkcyan;
+    margin: 20px 0 ;
+    width: 100%;
+    text-align:center;
+    padding:5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+#imgbox{
+    width:200px;
+    border-radius: 2px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#imgbox img{
+    width: 100%;
+    padding: 10px;
+}
+
+#imgbox.show-img
+{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.error
+{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake
+{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

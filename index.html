@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator using api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <p>Enter your url to generate QR</p>
+        <div class="search-box">
+            <input type="text" name="t1" id="url" class="search-box" placeholder="text or url">
+        </div>
+        <div id="imgbox">
+            <img src="" alt="create-qr-code" id="qrimg">
+        </div>
+        <button onclick="generateQR()" class="btn"> Generate QR</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
